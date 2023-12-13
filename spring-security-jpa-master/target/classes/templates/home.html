@@ -1,0 +1,20 @@
+<!-- home.html -->
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+</head>
+<body>
+<div class="container mt-5">
+    <h1 th:text="${message}">Welcome</h1>
+    <h2>Tester</h2>
+
+    <!-- Link to the admin page with Bootstrap styling -->
+    <a th:href="@{/admin}" class="btn btn-primary">Go to Admin Page</a>
+</div>
+</body>
+</html>
